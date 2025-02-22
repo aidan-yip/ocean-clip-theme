@@ -1,0 +1,51 @@
+.template-search__best-sellers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.best-sellers-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.best-seller-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    background-color: #e2f7ff;
+    transition: transform 0.5s;
+}
+
+.best-seller-item:hover {
+    background-color: #d4f0ff;
+    transform: scale(1.05);
+}
+
+.best-seller-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.best-seller-title, .best-seller-title a {
+    font-size: 1.7rem;
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    text-decoration: none !important; 
+    text-decoration-color: #000;
+}
+
+.best-seller-title:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 50em) {
+  .best-sellers-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
