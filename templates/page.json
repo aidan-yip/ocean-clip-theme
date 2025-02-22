@@ -15,9 +15,71 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "collapsible_content_gxYUKH": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_EbtniF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it take an item to ship?",
+            "icon": "truck",
+            "row_content": "<p>About 2-4 weeks on average.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_PAk7BV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if my item is damaged?",
+            "icon": "question_mark",
+            "row_content": "<p>if your item is damaged during shipping, we will provide a full refund and/or a replacement.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GQAKJn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it take for something to come back in stock?",
+            "icon": "price_tag",
+            "row_content": "<p>This is vendor dependent. Some items, such as notebooks and/or gift cards Will typically be back in stock in 1 to 3 business days. Third-party vendors will take longer typically up to a week.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_A97pB3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I return my purchase if I'm unsatisfied?",
+            "icon": "return",
+            "row_content": "<p>You absolutely can! As long as it's within the 10 day return period.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_EbtniF",
+        "collapsible_row_PAk7BV",
+        "collapsible_row_GQAKJn",
+        "collapsible_row_A97pB3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "scheme-fd1d9f5c-a230-4071-97aa-85232f590133",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collapsible_content_gxYUKH"
   ]
 }
