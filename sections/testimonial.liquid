@@ -1,0 +1,41 @@
+{{ 'testimonial.css' | asset_url | stylesheet_tag }}
+
+<h2 class="testimonial-header">{{ section.settings.testimonial_heading }}</h2>
+
+<blockquote class="testimonial-quote">
+  <p>{{ section.settings.testimonial_quote }}</p>
+  <footer>{{ section.settings.testimonial_customer_name }}</footer>
+</blockquote>
+
+{% schema %}
+{
+  "name": "Testimonial",
+  "tag": "section",
+  "class": "testimonial-section",
+  "settings": [
+    {
+      "id": "testimonial_heading",
+      "type": "text",
+      "label": "Section Heading",
+      "default": "Customer Testimonials"
+    },
+    {
+      "id": "testimonial_quote",
+      "type": "textarea",
+      "label": "Quote",
+      "default": "This is the best bookstore I have ever visited!"
+    },
+    {
+      "id": "testimonial_customer_name",
+      "type": "text",
+      "label": "Customer Name",
+      "default": "John Doe"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial"
+    }
+  ]
+}
+{% endschema %}
