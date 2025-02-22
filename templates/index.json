@@ -63,7 +63,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
@@ -74,6 +74,136 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_4fjdWJ": {
+      "type": "featured-product",
+      "blocks": {
+        "text_xXnUFq": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_b7m7bz": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_zFVMmw": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_nWFCy7": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_Y4JGQ8": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_7nQ9JN": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_y8zgez": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_xXnUFq",
+        "title_b7m7bz",
+        "price_zFVMmw",
+        "variant_picker_nWFCy7",
+        "quantity_selector_Y4JGQ8",
+        "buy_buttons_7nQ9JN",
+        "share_y8zgez"
+      ],
+      "settings": {
+        "product": "the-chronicles-of-narnia-deluxe-set",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_EgEFtE": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_T7czCw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it take an item to ship?",
+            "icon": "truck",
+            "row_content": "<p>About 2-4 weeks on average.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dBwyYN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if my item is damaged?",
+            "icon": "question_mark",
+            "row_content": "<p>if your item is damaged during shipping, we will provide a full refund and/or a replacement.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Xbc3ky": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it take for something to come back in stock?",
+            "icon": "return",
+            "row_content": "<p>This is vendor dependent. Some items, such as notebooks and/or gift cards Will typically be back in stock in 1 to 3 business days. Third-party vendors will take longer typically up to a week.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_iWtpFH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I return my purchase if I'm unsatisfied?",
+            "icon": "check_mark",
+            "row_content": "<p>You absolutely can! As long as it's within the 10 day return period.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_T7czCw",
+        "collapsible_row_dBwyYN",
+        "collapsible_row_Xbc3ky",
+        "collapsible_row_iWtpFH"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "scheme-fd1d9f5c-a230-4071-97aa-85232f590133",
+        "container_color_scheme": "scheme-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -113,6 +243,8 @@
   "order": [
     "image_banner",
     "featured_collection",
+    "featured_product_4fjdWJ",
+    "collapsible_content_EgEFtE",
     "call_to_action_6t6b7L",
     "testimonials",
     "testimonial_tHd8Vy",
