@@ -142,6 +142,40 @@
         {%- endunless -%}
         {%- if search.results_count == 0 and search.filters == empty -%}
           <p role="status">{{ 'templates.search.no_results' | t: terms: search.terms }}</p>
+
+          <!-- Add Best Sellers Section -->
+          <div class="template-search__best-sellers">
+            <h2>Check Out Our Best Sellers</h2>
+            <div class="best-sellers-grid">
+              {% assign sorted_products = collections.all.products | sort: 'best-selling' %}
+              {% for product in sorted_products limit: 3 %}
+                <div class="best-seller-item">
+                  <a href="{{ product.url }}">
+                    {{
+                      product.featured_image
+                      | image_url: width: 300
+                      | image_tag: class: 'best-seller-image', loading: 'lazy', alt: product.title
+                    }}
+                    <h3 class="best-seller-title">{{ product.title }}</h3>
+                  </a>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          {% comment %}
+            {% else %}
+            <h2>No results found</h2>
+            <p>Check out our best-sellers:</p>
+            <ul>
+              {% for product in collections['best-sellers'].products | limit: 3 %}
+                <li>
+                  <a href="{{ product.url }}">{{ product.title }}</a>
+                  <img src="{{ product | image_url: 'small' }}" alt="{{ product.title }}" width="100" height="100">
+                </li>
+              {% endfor %}
+            </ul>
+          {% endcomment %}
         {%- endif -%}
       {%- endif -%}
     </div>

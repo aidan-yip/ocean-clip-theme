@@ -243,13 +243,6 @@
       assign total_results = predictive_search.resources.products.size | plus: first_column_results_size
       if total_results == 0
         echo 'templates.search.no_results' | t: terms: predictive_search.terms
-        assign best_sellers = collections['best-sellers'].products | slice: 0, 3
-        for product in best_sellers
-            echo product.title | append: ' (' | append: product.featured_media | image_url: width: 50 | append: ')'
-          unless forloop.last
-            echo ', '
-          endunless
-        endfor
       else
         echo 'templates.search.results_with_count' | t: count: total_results | append: ': '
         if predictive_search.resources.queries.size > 0
