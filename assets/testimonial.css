@@ -4,14 +4,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 2rem 10%;
+    padding: 1rem 10%;
     background: #2b2b2b;
   }
   
   .testimonial-header {
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     color: #ffffff;
     font-size: 3rem;
     margin-bottom: 5rem;
@@ -26,12 +26,11 @@
     font-size: 24px;
     font-weight: 300;
     line-height: 1.5;
-    margin-bottom: 30px;
     color: #ffffff;
     border-left: solid 5px #e2f7ff;
   }
   
   .testimonial-quote:last-of-type {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
   }
   
